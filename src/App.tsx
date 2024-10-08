@@ -28,6 +28,12 @@ function App() {
         >
           Instagram
         </a>
+        <a
+          className="App-link"
+          href="mailto:themrsung@gmail.com"
+        >
+          themrsung@gmail.com
+        </a>
       </header>
     </div>
   );
