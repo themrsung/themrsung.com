@@ -1,8 +1,25 @@
 import React from 'react';
 import logo from './profile.jpg';
 import './App.css';
+import { Route, Routes, useHref, useLocation } from 'react-router-dom';
 
 function App() {
+  const location = useLocation();
+  const {hash, pathname, search} = location;
+
+  if (pathname === "/linkedin") return Link("https://linkedin.com/in/themrsung");
+  if (pathname === "/youtube") return Link("https://youtube.com/@themrsung");
+  if (pathname === "/instagram") return Link("https://instagram.com/themrsung");
+  if (pathname === "/mail") return Link("mailto:themrsung@gmail.com");
+
+  return (
+    <Routes>
+      <Route index element={<Home />} />
+    </Routes>
+  );
+}
+
+function Home() {
   return (
     <div className="App">
       <header className="App-header">
@@ -37,6 +54,11 @@ function App() {
       </header>
     </div>
   );
+}
+
+function Link(url : string) {
+  window.location.href = url;
+  return null;
 }
 
 export default App;
