@@ -10,6 +10,7 @@ function App() {
   if (pathname === "/linkedin") return Link("https://linkedin.com/in/themrsung");
   if (pathname === "/youtube") return Link("https://youtube.com/@themrsung");
   if (pathname === "/instagram") return Link("https://instagram.com/themrsung");
+  if (pathname === "/github") return Link("https://github.com/themrsung");
   if (pathname === "/mail") return Link("mailto:themrsung@gmail.com");
 
   return (
@@ -44,6 +45,12 @@ function Home() {
           href="https://instagram.com/themrsung"
         >
           Instagram
+        </a>
+        <a
+          className="App-link"
+          href="https://github.com/themrsung"
+        >
+          GitHub
         </a>
         <a
           className="App-link"
