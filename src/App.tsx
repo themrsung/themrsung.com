@@ -4,6 +4,8 @@ import './App.css';
 import { Route, Routes, useHref, useLocation } from 'react-router-dom';
 
 function App() {
+  window.location.replace("https://linktr.ee/themrsung/);
+  
   const location = useLocation();
   const {hash, pathname, search} = location;
 
