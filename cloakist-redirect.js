@@ -8,6 +8,6 @@ const var4 = "https://themrsung.com" === url;
 const debug = url.includes("debugbypass");
 
 if (!(var1 || var2 || var3 || var4 || debug)) {
-  window.location.href = "https://www.themrsung.com/";
-  // window.location.replace("https://www.themrsung.com/");
+  // window.location.href = "https://www.themrsung.com/";
+  window.location.replace("https://www.themrsung.com/");
 }
